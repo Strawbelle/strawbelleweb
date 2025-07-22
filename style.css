@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Questrial', sans-serif;
-  background-image: url("/strawbelleweb/img/imgfondo-tropicreme.png");
+  background-image: url("img/imgfondo-tropicreme.png"); /* ← ESTA RUTA ESTÁ CORRECTA */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
