@@ -1,67 +1,87 @@
-/* Estilos base */
-body {
+/* Reset base */
+* {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff6f0;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente global */
+body {
+  font-family: 'Questrial', sans-serif;
+  background-image: url("img/fondo-tropicreme.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #2c2c2c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
 header {
   background-color: #d62828;
-  padding: 20px;
+  padding: 30px 0;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 header h1 {
-  margin: 0;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   letter-spacing: 2px;
 }
 
-/* Menú de navegación */
+/* Navegación */
 nav {
-  background-color: #ffcccb;
-  padding: 10px 0;
+  background-color: rgba(255, 204, 203, 0.95);
+  padding: 12px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin: 0 15px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 nav a {
   text-decoration: none;
   color: #800000;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-weight: 600;
+  padding: 6px 12px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
 }
 
 nav a:hover {
-  color: #d62828;
+  background-color: #d62828;
+  color: white;
 }
 
 /* Contenido principal */
 main {
-  padding: 40px 20px;
+  flex: 1;
+  padding: 50px 20px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 main h2 {
   font-size: 2rem;
+  margin-bottom: 15px;
   color: #d62828;
 }
 
 main p {
   font-size: 1.2rem;
+  color: #444;
 }
 
 /* Footer */
@@ -69,53 +89,7 @@ footer {
   background-color: #111;
   color: white;
   text-align: center;
-  padding: 15px 0;
+  padding: 20px 0;
   font-size: 0.9rem;
-}
-.producto {
-  border: 1px solid #eee;
-  padding: 15px;
-  margin: 20px auto;
-  max-width: 300px;
-  background: #fff;
-  border-radius: 8px;
-}
-
-.producto img {
-  display: block;
-  margin: 0 auto 10px;
-  border-radius: 4px;
-}
-
-.producto h3 {
-  margin: 10px 0 5px;
-  color: #d62828;
-}
-
-.producto p {
-  font-size: 1.1rem;
-}
-
-.producto button {
-  padding: 8px 12px;
-  background-color: #d62828;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.producto button:hover {
-  background-color: #a91e1e;
-}
-
-#carrito {
-  border: 2px dashed #d62828;
-  background-color: #fff2f2;
-  padding: 20px;
-  margin-top: 20px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
 }
