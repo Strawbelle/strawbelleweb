@@ -20,6 +20,19 @@ body {
   flex-direction: column;
 }
 
+/* Animación de fondo suave */
+@keyframes zoomInOut {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
 /* Header */
 header {
   background-color: #d62828;
@@ -84,6 +97,7 @@ main h2 {
 main p {
   font-size: 1.2rem;
   color: #444;
+  line-height: 1.6;
 }
 
 /* Footer */
@@ -96,15 +110,41 @@ footer {
   box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
 }
 
-/* Animación de fondo suave */
-@keyframes zoomInOut {
-  0% {
-    background-size: 100%;
-  }
-  50% {
-    background-size: 105%;
-  }
-  100% {
-    background-size: 100%;
-  }
+/* Botón con efecto corona */
+.boton-corona {
+  background-color: #d62828;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
+
+.boton-corona:hover {
+  background-color: #a91e1e;
+  transform: scale(1.05);
+}
+
+.boton-corona::after {
+  content: "";
+  background-image: url("img/corona.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.boton-corona:hover::after {
+  opacity: 1;
+}
+
