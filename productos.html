@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos – Strawbelle</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Strawbelle</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Nuestros productos</h2>
+      <div class="producto">
+        <img src="img/camiseta1.jpg" alt="Camiseta Tropicrème" width="150">
+        <h3>Camiseta Tropicrème</h3>
+        <p>24,99 €</p>
+        <button onclick="agregarAlCarrito('Camiseta Tropicrème', 24.99)">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/sueter1.jpg" alt="Suéter Crowned" width="150">
+        <h3>Suéter Crowned & Committed</h3>
+        <p>39,99 €</p>
+        <button onclick="agregarAlCarrito('Suéter Crowned', 39.99)">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/banador1.jpg" alt="Bañador Tropicrème" width="150">
+        <h3>Bañador Tropicrème</h3>
+        <p>29,99 €</p>
+        <button onclick="agregarAlCarrito('Bañador Tropicrème', 29.99)">Añadir al carrito</button>
+      </div>
+    </section>
+
+   <section>
+  <h2>🛒 Tu carrito</h2>
+  <div id="carrito"></div>
+  <button id="finalizar-compra" onclick="finalizarCompra()">Finalizar compra</button>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Strawbelle</p>
+  </footer>
+</body>
+</html>
