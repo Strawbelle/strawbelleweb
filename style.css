@@ -1,15 +1,16 @@
+/* 0. Importación de fuente Questrial (¡debe ir al principio!) */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 /* 1. Reset base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Questrial', sans-serif !important; /* Aplica Questrial a todo */
 }
 
-/* 2. Fuente global y fondo animado */
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
+/* 2. Fondo animado */
 body {
-  font-family: 'Questrial', sans-serif;
   background-image: url("../img/imgfondo-tropicreme.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -155,3 +156,4 @@ footer {
     transform: translateX(-50%) translateY(-20px);
   }
 }
+
